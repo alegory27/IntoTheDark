@@ -1,0 +1,42 @@
+<!-- This is the view for Heading Out -->
+<html>
+   <head>
+       <title> Into the Dark </title>
+       <link rel="icon" href="assets/logo.png" />
+       <script>
+           function inputController(){
+               if (option1.checked){
+                   parent.location='choice2-1.html';
+               }
+               else{
+                   parent.location='choice2-2.html';
+               }
+           }
+       </script>
+   </head>
+   <body style="background-color: grey;">
+       <h1><center> Heading Out </center></h1>
+       <center><img src='assets/tree.png' width='480'></center>
+       <p><center>You decide it's time to depart from your cozy new home. You give one last look at the tree. </center></p>
+       
+       <code><center>
+           I can't help, but feel like there's something off about you...  
+       </center></code>
+
+       <p><center> </center></p>
+       
+       <h3><center> What Shall You Do? </center></h3>
+  
+       <div><center>
+           <label>Select:</label>
+           <br>
+           <input type="radio" id='option1' name='input-name' value='option1'>
+           <label>Search the Box</label>
+           <br>
+           <input type="radio" id='option2' name='input-name' value='option2'>
+           <label>Leave</label>
+           <br>
+           <input type="button" onClick="inputController()" value='Submit'>
+       </center></div>
+   </body>
+</html>

@@ -1,0 +1,72 @@
+<!-- This is the view for Choice 4-1 -->
+
+<html>
+   <head>
+       <title> Into the Dark </title>
+       <link rel="icon" href="assets/logo.png" />
+       <script>
+          function inputController(){
+               if (input1.value == '2694'){
+                   parent.location='choice4-1A.html';
+               }
+               else{
+                   parent.location='choice4-1B.html';
+               }
+           }
+       </script>
+   </head>
+   <body style="background-color: grey;">
+       <h1><center> Into the Light </center></h1>
+       <center><img src='assets/logo.png' width='480'></center>
+       <p><center> Hope lifts you up as you sprint towards the light. As you get closer, you can make out a clearing in the middle of the wood. Bathed in moonlight. </center></p>
+       <p><center> In the center of the clearing you see a door. You walk up towards it and stop. Intently gazing upon this door that seemingly leads to nowhere.</center></p>
+
+       <code><center>
+           What the.... Is this some kind of trick?
+       </center></code>
+       
+       <p><center> You study the door thoroughly and find an electronic lock near the knob. Nothing more than a numpad under a red light. </center></p>
+
+       <code><center>
+           Perhaps something will happen if I enter the code? But what could it be? Hmmmmmm
+       </center><code>
+
+       <h4><center>You remember the note you found earlier and look at it again.</center></h4>
+  
+       <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+           <tr>
+               <td> 6 </td>
+               <td> 9 </td>
+               <td> 4 </td>
+               <td> 2 </td>
+           </tr>
+           <tr>
+               <td> 9 </td>
+               <td> 4 </td>
+               <td> 2 </td>
+               <td> 6  </td>
+           </tr>
+           <tr>
+               <td> 4 </td>
+               <td> 2 </td>
+               <td> 6 </td>
+               <td> 9 </td>
+           </tr>
+           <tr>
+               <td> ? </td>
+               <td> ? </td>
+               <td> ? </td>
+               <td> ? </td>
+           </tr>
+       </table>
+       
+       <h3><center> Enter the Code </center></h3>
+       
+       <div><center>
+           <label>Input Code:</label>
+           <input type="text" id='input1'>
+           <input type="button" value='Submit' onClick="inputController()">
+       </center></div>
+     
+   </body>
+</html>
